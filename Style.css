@@ -1,0 +1,383 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border; /* Tambahkan ini untuk memastikan padding dan border tidak mempengaruhi lebar dan tinggi elemen */
+}
+header {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+body {
+    font-family: Arial, sans-serif; /* Gunakan font default */
+}
+
+/* Styling navigasi */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 8%;
+    background-color: #ffffff;
+    border-bottom: 1px solid pink;
+}
+
+.logo {
+    color: black;
+    font-size: 35px;
+    letter-spacing: -1px;
+    cursor: pointer;
+}
+
+.logo span {
+    color: palevioletred;
+}
+/* CSS */
+nav {
+    background-color: rgba(255, 255, 255, 0); /* Nilai alpha (a) menentukan transparansi */
+    padding: 10px; /* Sesuaikan padding sesuai kebutuhan */
+}
+
+h2.logo {
+    background-color: transparent; /* Membuat latar belakang transparan */
+    padding: 5px; /* Sesuaikan padding sesuai kebutuhan */
+}
+/* CSS */
+nav ul li a {
+    color: #000; /* Sesuaikan warna teks sesuai kebutuhan */
+    text-decoration: none; /* Menghilangkan garis bawah */
+}
+
+
+nav ul {
+    padding-left: 10px
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 25px;
+}
+
+
+nav ul li a:hover {
+    color: palevioletred;
+}
+
+.btn {
+    background-color: pink;
+    color: black;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 30px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn:hover {
+    color: white;
+    background-color: palevioletred;
+    cursor: pointer;
+}
+
+/* Styling konten utama */
+#home {
+    height: 100vh;
+    width: 100%;
+    background-image: url('lala.jpg'); /* Ganti 'path/to/your/image.jpg' dengan path menuju gambar latar yang ingin Anda gunakan */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;  
+}
+
+.content {
+    text-align: center;
+    margin-top: 50px; /* Sesuaikan margin */
+}
+
+.content h1 {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+.content h3 {
+    color: black;
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align:center;
+}
+
+.content a {
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 30px;
+    background-color: pink;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.content a:hover {
+    color: white;
+    background-color: palevioletred;
+}
+
+/* Styling bagian About */
+#about {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.about-me {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.about-me img {
+    width: 300px;
+    border-radius: 10px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+}
+
+.about-text {
+    max-width: 500px;
+    text-align: left;
+}
+
+.about-text h2 {
+    color: pink;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.about-text h5 {
+    color: palevioletred;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    color: black;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.about-text .button {
+    background-color: pink;
+    color: black;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.about-text .button:hover {
+    color: white;
+    background-color: palevioletred;
+}
+
+/* Styling bagian Project */
+/* Styling konten utama */
+.services {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1300px; /* Sesuaikan sesuai kebutuhan */
+    margin: 0 auto;
+    background-color: mediumturquoise;
+}
+
+.box {
+    flex: 0 1 calc(33.333% - 20px); /* Sesuaikan jumlah kotak yang ingin Anda tampilkan dalam satu baris */
+    margin: 10px;
+    display: flex;
+}
+
+.card {
+    width: 100%; /* Atur lebar kartu sesuai kebutuhan */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    border: 2px solid palevioletred;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h5 {
+    color: black;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: black;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.card .button-card {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 30px;
+    background-color: pink;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.card .button-card:hover {
+    color: white;
+    background-color: palevioletred;
+    cursor: pointer;
+}
+
+/* Responsiveness */
+@media only screen and (max-width: 768px) {
+    .box {
+        flex: 0 1 calc(50% - 20px); /* Atur jumlah kotak yang ingin Anda tampilkan dalam satu baris untuk layar kecil */
+    }
+}
+
+
+/* Styling footer */
+#footer {
+    background-color: #000;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.location-map {
+    flex: 1;
+}
+
+.location-map img {
+    max-width: 100%;
+    height: auto;
+}
+
+.social-icons {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 20px;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: palevioletred;
+}
+
+.email-form {
+    flex: 1;
+    text-align: center;
+}
+
+.email-form h3 {
+    margin-bottom: 20px;
+}
+
+.email-form input[type="email"],
+.email-form input[type="password"] {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.email-form button {
+    padding: 10px 20px;
+    background-color: pink;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.email-form button:hover {
+    background-color: palevioletred;
+}
+
+/* Responsiveness */
+@media only screen and (max-width: 768px) {
+    nav {
+        padding: 10px;
+    }
+    nav ul {
+        padding-left: 0;
+    }
+
+    .logo {
+        padding-right: 20px;
+    }
+
+    .image img {
+        width: 100%;
+        left: 0;
+        transform: none;
+    }
+
+    .content {
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .content h1 {
+        font-size: 35px;
+    }
+
+    .about-me {
+        flex-direction: column;
+    }
+
+    .about-me img {
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .about-text {
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .card {
+        margin: 0 auto 20px;
+    }
+}

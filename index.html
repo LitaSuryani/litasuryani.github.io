@@ -1,20 +1,146 @@
-<!DOCTYPE html> 
-<html> 
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8"> 
-    <meta name="view port" content="width-device-width, initial-scale=1"> 
-    <title>Login Data Mahasiswa</title> 
-    <link rel="stylesheet" type="text/css" href="style1.css"> 
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">  
-</head> 
-<body id="bg-login"> 
-    <div class="box-login"> 
-        <h2>Login</h2> 
-        <form action="" method="POST"> 
-            <input type="text" name="user" placeholder="Username" class="input-control"> 
-            <input type="password" name="pass" placeholder="Password" class="input-control"> 
-            <input type="submit" name="submit" value="Login" class="btn"> 
-        </form> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio_Lita</title>
+    <script src="https://kit.fontawesome.com/23a2996f43.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="home">
+        <nav>
+            <h2 class="logo">Portofolio<span>Lita</span></h2>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#container">Project</a></li>
+                <li><a href="#footer">Contact</a></li>
+            </ul>
+        </nav> 
+        <div class="image">
+            <img src="" alt="">
+        </div>
+        <div class="content">
+            <h4>Hello, My Name Is</h4>
+            <h1><span>Lita</span> Suryani</h1>
+            <h3>I'm a Junior Developer & College Student</h3>
+            <a href="#about">More About Me</a>
+        </div>
     </div>
-</body> 
-</html> 
+<div id="about">
+    <div class="about-me">
+        <img src="jadoo.jpg" alt="Seika">
+        <div class="about-text">
+            <h2>About <span>Me</span></h2>
+            <h5>Junior Web Programmer <span>& College Student</span></h5>
+            <p>Nama saya Lita, saya adalah salah satu junior web programer. Saya sedang mengasah kemampuan saya, Saat ini, saya sedang menempuh pendidikan di bidang teknologi 
+                informasi dan terus mencari peluang untuk mengembangkan diri dan berkontribusi di dunia pemrograman web. 
+                Saya selalu antusias dalam mempelajari teknologi baru dan menyelesaikan tantangan dalam pemrograman. 
+            </p>
+            <a href="#footer" class="button">Contact Me</a>
+        </div>
+    </div>
+</div>
+
+<div class="services">
+    <div id="title">
+        <h2>PROJECT</h2>
+    </div>
+    <div id="container">
+        <div class="row">
+            <div class="box">
+                <div class="card">
+                    <div class="card-image">
+                    </div>
+                    <h5>Project Pemrograman Web</h5>
+                    <div class="pra">
+                        <p>Membuat Form Data Mahasiswa dengan HTML5, CSS, dan PHP</p>
+                        <a href="#" class="button-card">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="card">
+                    <h5>Project Web Development</h5>
+                    <div class="pra">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum, repellendus.</p>
+                        <a href="#" class="button-card">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="card">
+                    <h5>Project Web Development</h5>
+                    <div class="pra">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum, repellendus.</p>
+                        <a href="#" class="button-card">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="box">
+                <div class="card">
+                    <h5>Project Web Development</h5>
+                    <div class="pra">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum, repellendus.</p>
+                        <a href="#" class="button-card">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="card">
+                    <h5>Project Web Development</h5>
+                    <div class="pra">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum, repellendus.</p>
+                        <a href="#" class="button-card">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="card">
+                    <h5>Project Web Development</h5>
+                    <div class="pra">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum, repellendus.</p>
+                        <a href="#" class="button-card">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+</div>
+<footer id="footer">
+    <div class="footer-content">
+        <div class="location-map">
+             <img src="map.png" alt="Location Map"> 
+        </div>
+        <div class="social-icons">
+            <a href="#" target="_blank">
+                <i class="fab fa-facebook-square"></i>
+            </a>
+            <a href="#" target="_blank">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" target="_blank">
+                <i class="fas fa-phone">+6281238814268</i>
+            </a>    
+           
+        </div>
+        <div class="email-form">
+            <h3>Login to your email</h3>
+             <form action="/login" method="post">
+                 <input type="email" name="email" placeholder="Email">
+                 <input type="password" name="password" placeholder="Password">
+                 <button type="submit">Login</button>
+             </form> 
+        </div>
+    </div>
+</footer>
+
+
+</body>
+</html>
